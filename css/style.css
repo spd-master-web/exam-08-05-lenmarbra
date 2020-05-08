@@ -1,7 +1,7 @@
 /* disable these when you're done */
-.ui-grid-container-one {
+/* .ui-grid-container-one {
   background-image: url('/images/grid-1.png');
-}
+} */
 .ui-grid-container-two {
   background-image: url('/images/grid-2.png');
 }
@@ -11,5 +11,18 @@
 /* your CSS goes here */
 
 .ui-grid-container{
-  
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  background-color: #6495ed;
 }
+
+/* .one{
+  grid-column: span 1;
+  background: #6495ed;
+} */
+
+.ui-grid-container div:nth-child(even){
+  background: #ffffff;
+}
+
