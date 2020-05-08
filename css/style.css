@@ -14,15 +14,21 @@
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(5, 1fr);
-  background-color: #6495ed;
+  background-color: #ffffff;
 }
-
-/* .one{
-  grid-column: span 1;
-  background: #6495ed;
-} */
 
 .ui-grid-container div:nth-child(even){
-  background: #ffffff;
+  background: #6495ed;
 }
+
+.six{
+  background-color: #ffffff;
+}
+
+.seven{
+  background-color: #ed64a4;
+  grid-column: 2/6;
+  grid-row: 2/4;
+}
+
 
