@@ -2,33 +2,60 @@
 /* .ui-grid-container-one {
   background-image: url('/images/grid-1.png');
 } */
-.ui-grid-container-two {
+/* .ui-grid-container-two {
   background-image: url('/images/grid-2.png');
-}
-.ui-grid-container-three {
+} */
+/* .ui-grid-container-three {
   background-image: url('/images/grid-3.png');
-}
+} */
 /* your CSS goes here */
 
 .ui-grid-container{
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(5, 1fr);
-  background-color: #ffffff;
+  grid-template-columns: repeat(5, auto);
+  grid-template-rows: repeat(5, auto);
 }
 
-.ui-grid-container div:nth-child(even){
-  background: #6495ed;
-}
-
-.six{
-  background-color: #ffffff;
+.ui-grid-container div:nth-child(odd){
+  background-color: #6495ed;
 }
 
 .seven{
-  background-color: #ed64a4;
   grid-column: 2/6;
   grid-row: 2/4;
+  background-color: #ed64a4;
+}
+
+.ui-grid-container-third{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+}
+
+.blue{
+  grid-column: 1 / 5;
+  grid-row: 1 / 6;
+  background-color: #6495ed;
+}
+
+.pink{
+  grid-column: 5 / 6;
+  grid-row: 1 / 6;
+  background-color: #ed64a4;
+}
+
+.text{
+  grid-column: 3, 6;
+  grid-row: 4 / 5; 
+}
+
+h1{
+  margin: 0;
+  color: #d0166d;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1em;
+  text-shadow: 2px 2px 0px #ffffff61;
 }
 
 
