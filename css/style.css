@@ -28,6 +28,7 @@
 
 .ui-grid-container-third{
   display: grid;
+  grid-auto-flow: column;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(5, 1fr);
 }
@@ -45,16 +46,20 @@
 }
 
 .text{
-  grid-column: 3, 6;
+  grid-column: 3 / 6;
   grid-row: 4 / 5; 
+  background-color: none;
 }
 
-h1{
+.text h1{
   margin: 0;
+  text-align: righ;
+  padding-right: 20px;
   color: #d0166d;
-  font-size: 30px;
+  font-size: 7em;
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1em;
+  letter-spacing: 2px;
   text-shadow: 2px 2px 0px #ffffff61;
 }
 
